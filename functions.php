@@ -40,18 +40,19 @@ function sa1_assets() {
     wp_enqueue_style( "fontawesome-css", get_theme_file_uri( "assets/plugins/animate/animate.min.css" ), null, "1.0" );
     wp_enqueue_style( "fontawesome-css", get_theme_file_uri( "assets/plugins/magnific-popup/magnific-popup.css" ), null, "1.0" );
     wp_enqueue_style( "fontawesome-css", get_theme_file_uri( "assets/plugins/owl-carousel/owl.carousel.min.css" ), null, "1.0" );
-
+    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css?family=Quicksand:300,400,500%7CSpectral:400,400i,500,600,700');
     wp_enqueue_style( "sa1-css", get_stylesheet_uri(), null, VERSION );
 
-
+    // Loading Plugins JS Files
+    wp_enqueue_style( "fontawesome-css", get_theme_file_uri( "assets/plugins/magnific-popup/jquery.magnific-popup.min.js" ), null, "1.0" );
+    wp_enqueue_style( "carousel-css", get_theme_file_uri( "assets/plugins/owl-carousel/owl.carousel.min.js" ), null, "1.0" );
     // Loading main JS Files
     wp_enqueue_script( "bootstrap-js", get_theme_file_uri( "assets/js/bootstrap.bundle.min.js" ), null, "1.0" );
     wp_enqueue_script( "custom-js", get_theme_file_uri( "assets/js/custom.js" ), null, "1.0" );
     wp_enqueue_script( "jquery-js", get_theme_file_uri( "assets/js/jquery-1.12.1.min.js" ), null, "1.0" );
     wp_enqueue_script( "scripts-js", get_theme_file_uri( "assets/js/scripts.js" ), array( "jquery" ), "1.0", true );
 
-    // Loading Plugins JS Files
-    wp_enqueue_style( "fontawesome-css", get_theme_file_uri( "assets/plugins/magnific-popup/jquery.magnific-popup.min.js" ), null, "1.0" );
+   
 
 }
 

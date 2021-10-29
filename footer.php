@@ -31,29 +31,6 @@
         <span><i class="fa fa-long-arrow-up"></i></span>
     </div>
     <!-- End of Back to Top Button -->   
-
-    
-
-    <!-- JS Files -->
-
-    <!-- ==== JQuery 1.12.1 js file ==== -->
-    <script src="assets/js/jquery-1.12.1.min.js"></script>
-
-    <!-- ==== Bootstrap js file ==== -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-
-    <!-- ==== Owl Carousel ==== -->
-    <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-
-    <!-- ==== Magnific Popup ==== -->
-    <script src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-     
-    <!-- ==== Script js file ==== -->
-    <script src="assets/js/scripts.js"></script>
-
-    <!-- ==== Custom js file ==== -->
-    <script src="assets/js/custom.js"></script>
-    
 <?php wp_footer();?>
 </body>
 </html>

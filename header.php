@@ -5,31 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!--==== Google Fonts ====-->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500%7CSpectral:400,400i,500,600,700" rel="stylesheet">
-
-    <!-- CSS Files -->
-
-    <!--==== Bootstrap css file ====-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!--==== Font-Awesome css file ====-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
-    <!--==== Animate CSS ====-->
-    <link rel="stylesheet" href="assets/plugins/animate/animate.min.css">
-
-    <!--==== Owl Carousel ====-->
-    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.min.css">
-
-    <!--==== Magnific Popup ====-->
-    <link rel="stylesheet" href="assets/plugins/magnific-popup/magnific-popup.css">
-
-    <!--==== Style css file ====-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!--==== Custom css file ====-->
-    <link rel="stylesheet" href="assets/css/custom.css">
     <?php wp_head();?>
 </head>
 
@@ -45,7 +20,7 @@
                 <span class="b-line-under"></span>
                 <div class="input-group-append">
                     <button type="button" class="btn">
-                        <img src="assets/images/search-icon.svg" alt="" class="img-fluid svg">
+                        <img src="<?php echo get_template_directory_uri();?>/assets/images/search-icon.svg" alt="" class="img-fluid svg">
                     </button>
                 </div>
             </div>
@@ -62,7 +37,7 @@
                     <div class="col-lg-3 col-md-4 col-6">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="#"><img src="assets/images/logo.png" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/logo.png" alt="" class="img-fluid"></a>
                         </div>
                         <!-- End of Logo -->
                     </div>
@@ -114,13 +89,13 @@
                         <div class="mobile-menu-cover">
                             <ul class="nav mobile-nav-menu">
                                 <li class="search-toggle-open">
-                                    <img src="assets/images/search-icon.svg" alt="" class="img-fluid svg">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/search-icon.svg" alt="" class="img-fluid svg">
                                 </li>
                                 <li class="search-toggle-close hide">
-                                    <img src="assets/images/close.svg" alt="" class="img-fluid">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/close.svg" alt="" class="img-fluid">
                                 </li>
                                 <li class="nav-menu-toggle">
-                                    <img src="assets/images/menu-toggler.svg" alt="" class="img-fluid svg">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/menu-toggler.svg" alt="" class="img-fluid svg">
                                 </li>
                             </ul>
                         </div>

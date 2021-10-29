@@ -7,7 +7,7 @@
                             <div class="widget-content">
                                 <!-- Author Image -->
                                 <div class="author-image">
-                                    <img src="assets/images/blog/author.jpg" alt="" class="img-fluid">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/blog/author.jpg" alt="" class="img-fluid">
                                 </div>
                                 <!-- Author Name -->
                                 <div class="author-name text-center">
@@ -43,7 +43,7 @@
                                 <div class="featured-post">
                                     <!-- Post Thumbnail -->
                                     <a href="blog-details.html">
-                                        <img src="assets/images/sidebar/fp-1.jpg" alt="" class="img-fluid">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/fp-1.jpg" alt="" class="img-fluid">
                                     </a>
                                     <!-- Post Title -->
                                     <div class="featured-post-title">
@@ -56,7 +56,7 @@
                                 <div class="featured-post">
                                     <!-- Post Thumbnail -->
                                     <a href="blog-details.html">
-                                        <img src="assets/images/sidebar/fp-2.jpg" alt="" class="img-fluid">
+                                        <img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/fp-2.jpg" alt="" class="img-fluid">
                                     </a>
                                     <!-- Post Title -->
                                     <div class="featured-post-title">
@@ -95,7 +95,7 @@
                             <!-- Widget Content -->
                             <div class="widget-content">
                                 <a href="#">
-                                    <img src="assets/images/sidebar/ad.jpg" alt="" class="img-fluid">
+                                    <img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/ad.jpg" alt="" class="img-fluid">
                                 </a>
                             </div>
                             <!-- End of Widget Content -->
@@ -115,27 +115,27 @@
                                 <ul class="insta-gallery">
                                     <li>
                                         <!-- Instagram Post Image -->
-                                        <a href="#"><img src="assets/images/sidebar/instagram/1.jpg" alt="" class="img-fluid"></a>
+                                        <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/instagram/1.jpg" alt="" class="img-fluid"></a>
                                     </li>
                                     <li>
                                         <!-- Instagram Post Image -->
-                                        <a href="#"><img src="assets/images/sidebar/instagram/2.jpg" alt="" class="img-fluid"></a>
+                                        <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/instagram/2.jpg" alt="" class="img-fluid"></a>
                                     </li>
                                     <li>
                                         <!-- Instagram Post Image -->
-                                        <a href="#"><img src="assets/images/sidebar/instagram/3.jpg" alt="" class="img-fluid"></a>
+                                        <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/instagram/3.jpg" alt="" class="img-fluid"></a>
                                     </li>
                                     <li>
                                         <!-- Instagram Post Image -->
-                                        <a href="#"><img src="assets/images/sidebar/instagram/4.jpg" alt="" class="img-fluid"></a>
+                                        <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/instagram/4.jpg" alt="" class="img-fluid"></a>
                                     </li>
                                     <li>
                                         <!-- Instagram Post Image -->
-                                        <a href="#"><img src="assets/images/sidebar/instagram/5.jpg" alt="" class="img-fluid"></a>
+                                        <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/instagram/5.jpg" alt="" class="img-fluid"></a>
                                     </li>
                                     <li>
                                         <!-- Instagram Post Image -->
-                                        <a href="#"><img src="assets/images/sidebar/instagram/6.jpg" alt="" class="img-fluid"></a>
+                                        <a href="#"><img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/instagram/6.jpg" alt="" class="img-fluid"></a>
                                     </li>
                                 </ul>
                                 <!-- Instagram Follow Button -->
@@ -186,7 +186,7 @@
                                     <!-- Post Thumbnail -->
                                     <div class="post-thumb">
                                         <a href="blog-details.html">
-                                            <img src="assets/images/sidebar/rp-1.jpg" alt="" class="img-fluid">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/rp-1.jpg" alt="" class="img-fluid">
                                         </a>
                                     </div>
                                     <!-- Post Title -->
@@ -200,7 +200,7 @@
                                     <!-- Post Thumbnail -->
                                     <div class="post-thumb">
                                         <a href="blog-details.html">
-                                            <img src="assets/images/sidebar/rp-2.jpg" alt="" class="img-fluid">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/rp-2.jpg" alt="" class="img-fluid">
                                         </a>
                                     </div>
                                     <!-- Post Title -->
@@ -214,7 +214,7 @@
                                     <!-- Post Thumbnail -->
                                     <div class="post-thumb">
                                         <a href="blog-details.html">
-                                            <img src="assets/images/sidebar/rp-3.jpg" alt="" class="img-fluid">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/rp-3.jpg" alt="" class="img-fluid">
                                         </a>
                                     </div>
                                     <!-- Post Title -->
@@ -228,7 +228,7 @@
                                     <!-- Post Thumbnail -->
                                     <div class="post-thumb">
                                         <a href="blog-details.html">
-                                            <img src="assets/images/sidebar/rp-4.jpg" alt="" class="img-fluid">
+                                            <img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/rp-4.jpg" alt="" class="img-fluid">
                                         </a>
                                     </div>
                                     <!-- Post Title -->
@@ -258,7 +258,7 @@
                                         <!-- Single Post -->
                                         <div class="wmc-post">
                                             <a href="blog-details.html">
-                                                <img src="assets/images/sidebar/mcp-1.jpg" alt="" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/mcp-1.jpg" alt="" class="img-fluid">
                                             </a>
                                             <div class="wmc-post-title">
                                                 <h6> <a href="blog-details.html"> Understanding The Background Of Fashion </a></h6>
@@ -269,7 +269,7 @@
                                         <!-- Single Post -->
                                         <div class="wmc-post">
                                             <a href="blog-details.html">
-                                                <img src="assets/images/sidebar/mcp-2.jpg" alt="" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/mcp-2.jpg" alt="" class="img-fluid">
                                             </a>
                                             <div class="wmc-post-title">
                                                 <h6> <a href="blog-details.html">12-inch MacBook Refurb $830, Apple Watch Series</a> </h6>
@@ -284,7 +284,7 @@
                                         <!-- Single Post -->
                                         <div class="wmc-post">
                                             <a href="blog-details.html">
-                                                <img src="assets/images/sidebar/mcp-1.jpg" alt="" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/mcp-1.jpg" alt="" class="img-fluid">
                                             </a>
                                             <div class="wmc-post-title">
                                                 <h6> <a href="blog-details.html"> Understanding The Background Of Fashion </a></h6>
@@ -295,7 +295,7 @@
                                         <!-- Single Post -->
                                         <div class="wmc-post">
                                             <a href="blog-details.html">
-                                                <img src="assets/images/sidebar/mcp-2.jpg" alt="" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/mcp-2.jpg" alt="" class="img-fluid">
                                             </a>
                                             <div class="wmc-post-title">
                                                 <h6> <a href="blog-details.html">12-inch MacBook Refurb $830, Apple Watch Series</a> </h6>
@@ -310,7 +310,7 @@
                                         <!-- Single Post -->
                                         <div class="wmc-post">
                                             <a href="blog-details.html">
-                                                <img src="assets/images/sidebar/mcp-1.jpg" alt="" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/mcp-1.jpg" alt="" class="img-fluid">
                                             </a>
                                             <div class="wmc-post-title">
                                                 <h6> <a href="blog-details.html"> Understanding The Background Of Fashion </a></h6>
@@ -321,7 +321,7 @@
                                         <!-- Single Post -->
                                         <div class="wmc-post">
                                             <a href="blog-details.html">
-                                                <img src="assets/images/sidebar/mcp-2.jpg" alt="" class="img-fluid">
+                                                <img src="<?php echo get_template_directory_uri();?>/assets/images/sidebar/mcp-2.jpg" alt="" class="img-fluid">
                                             </a>
                                             <div class="wmc-post-title">
                                                 <h6> <a href="blog-details.html">12-inch MacBook Refurb $830, Apple Watch Series</a> </h6>
