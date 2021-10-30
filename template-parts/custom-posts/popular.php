@@ -12,6 +12,7 @@
                         $args = array(
                             'post_type' => 'post',
                             'posts_per_page' => '3',
+                            'orderby' => 'comment_count',
                         );
 
                         $query = new WP_QUERY($args);
@@ -40,19 +41,22 @@
                                     <ul class="nav meta align-items-center">
                                         <li class="meta-author">
                                         <?php echo get_avatar(get_the_author_meta( "ID" ));?>
-                                            <a href="#">Alex Garry</a>
+                                            <a href="#"><?php the_author();?></a>
                                         </li>
-                                        <li class="meta-date"><a href="#">2 Feb 2019</a></li>
-                                        <li class="meta-comments"><a href="#"><i class="fa fa-comment"></i> 2</a></li>
+                                        <li class="meta-date"><a href="#"><?php echo get_the_date();?></a></li>
+                                        <li class="meta-comments">
+                                        <a href="#"><i class="fa fa-comment">
+                                        </i> <?php echo $post->comment_count; ?>
+                                        </a></li>
                                     </ul>
                                     <!-- Post Desc -->
                                     <div class="desc">
                                         <p>
-                                            Integer at faucibus urna. Nullam condimentum leo id elit sagittis auctor. Curabitur elementum nunc...
+                                            <?php the_excerpt();?>
                                         </p>
                                     </div>
                                     <!-- Read More Button -->
-                                    <a href="blog-details.html" class="btn btn-primary">View More</a>
+                                    <a href="<?php the_permalink();?>" class="btn btn-primary"><?php _e( "View More", "sa1" );?></a>
                                 </div>
                             </div>
                         </div>
