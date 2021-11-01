@@ -48,44 +48,6 @@
 
 
 
-                            <?php
-                                    $args = array(
-                                        'post_type' => 'post',
-                                        'posts_per_page' => '5',
-                                        'orderby' => 'meta_value_num',
-                                    );
-
-                                    $viewed = new WP_QUERY($args);
-
-                                    while( $viewed->have_posts() ){
-                                        $viewed->the_post();
-                                        ?>
-                            <div class="col-sm-6">
-                                <!-- Post -->
-                                <div class="post-default">
-                                    <div class="post-thumb">
-                                        <a href="blog-details.html"> <img src="<?php echo get_template_directory_uri();?>/assets/images/blog/small/1.jpg" alt="" class="img-fluid"> </a>
-                                    </div>
-                                    <div class="post-data">
-                                        <!-- Category -->
-                                        <div class="cats"><a href="category-result.html">Love</a></div>
-                                        <!-- Title -->
-                                        <div class="title">
-                                            <h2><a href="blog-details.html">Blaak Attack Earns Boels First 2019 Victory </a></h2>
-                                        </div>
-                                        <!-- Post Desc -->
-                                        <div class="desc">
-                                            <p>
-                                                Duis mauris augue, efficitur eu arcu sit amet, posuere dignissim neque. Aenean enim sem, pharetra et magna....
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- End of Post -->
-                            </div>
-
-                            
                             
                         </div>
                     </div>
