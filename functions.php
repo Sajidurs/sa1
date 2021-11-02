@@ -6,6 +6,7 @@
  * Created By: Sajidur Rahman
  * @since 1.0.0
  */
+require_once(get_theme_file_path("/inc/tgm.php"));
 if ( site_url() == "http://localhost.com/sa1" ) {
     define( "VERSION", time() );
 } else {
