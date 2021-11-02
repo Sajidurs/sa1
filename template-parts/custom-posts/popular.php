@@ -24,7 +24,7 @@
                         <div class="post-default post-has-right-thumb">
                             <div class="d-flex flex-wrap">
                                 <div class="post-thumb align-self-stretch order-md-2">
-                                    <a href="blog-details.html">
+                                    <a href="<?php the_permalink();?>">
                                     <?php the_post_thumbnail();?>
                                     </a>
                                 </div>
@@ -35,7 +35,7 @@
                                     </a></div>
                                     <!-- Title -->
                                     <div class="title">
-                                        <h2><a href="blog-details.html"><?php the_title();?></a></h2>
+                                        <h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
                                     </div>
                                     <!-- Post Meta -->
                                     <ul class="nav meta align-items-center">

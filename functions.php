@@ -12,6 +12,7 @@ if ( site_url() == "http://localhost.com/sa1" ) {
 } else {
     define( "VERSION", wp_get_theme()->get( "Version" ) );
 }
+register_nav_menu( "topmenu", __( "Top Menu", "sa1" ) );
 function sa1_theme_setup(){
     load_theme_textdomain( "sa1" );
     add_theme_support( "post-thumbnails" );

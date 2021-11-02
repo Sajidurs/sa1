@@ -1,9 +1,11 @@
-<?php get_header();?>
+<?php 
+the_post();
+get_header();
+?>
 
     <!-- Page title -->
     <div class="page-title">
         <div class="container">
-            <h2>Blog Details: Standard</h2>
             <ul class="nav">
                 <li><a href="<?php echo get_home_url();?>"><?php _e( "Home", "sa1" );?></a></li>
                 <li><?php echo '<a href="' . get_permalink( get_option( 'page_for_posts' ) ) . '">Our Blog</a>'; ?></li>
@@ -31,18 +33,39 @@
 
                             <!-- Title -->
                             <div class="title">
-                                <h2>Top Things To Look For When Choosing A Safari Lodge</h2>
+                                <h2><?php the_title();?></h2>
                             </div>
 
                             <!-- Meta -->
-                            <ul class="nav meta align-items-center">
+                            <ul class= "nav meta align-items-center">
                                 <li class="meta-author">
-                                    <img src="assets/images/blog/author.jpg" alt="" class="img-fluid">
-                                    <a href="#">Alex Garry</a>
+                                <?php echo get_avatar(get_the_author_meta( "ID" ));?>
+                                    <a href="#"><?php the_author();?></a>
                                 </li>
-                                <li class="meta-date"><a href="#">2 Feb 2019</a></li>
-                                <li> 2 min read </li>
-                                <li class="meta-comments"><a href="#"><i class="fa fa-comment"></i> 2</a></li>
+                                <li class="meta-date"><a href="#"><?php echo get_the_date();?></a></li>
+                                <li> 
+                                <?php
+
+                                // Counting the Reading Time
+                                    function reading_time() {
+                                    $content = get_post_field( 'post_content', $post->ID );
+                                    $word_count = str_word_count( strip_tags( $content ) );
+                                    $readingtime = ceil($word_count / 200);
+
+                                    return $readingtime;
+                                    }
+
+                                    $readingtimeresult = reading_time();
+
+                                    $html = sprintf(
+                                        '<span>%s</span><span>%s</span>',
+                                                __( '<b> Reading time:</b> ', 'text_domain' ) . $readingtimeresult,
+                                        __( ' minutes', 'Avada' ),
+                                    );
+                                    echo __( $html );
+                                  ?>
+                                </li>
+                                <li class="meta-comments"><a href="#"><i class="fa fa-comment"></i> <?php echo $post->comment_count; ?></a></li>
                             </ul>
                         </div>
                         <!-- End of Post Meta Info -->
@@ -51,73 +74,30 @@
 
                     <!-- Post Content -->
                     <div class="post-content-cover my-drop-cap">
-                        <p>
-                            She travelling acceptance men unpleasant her especially to entreaties law. Law forth but end any arise chief arose. Old her say learn these large. Joy fond many in  ham high seen this. Few preferred continual led incommode neglected.  To discovered insensible collecting your unpleasant but invitation.
-                        </p>
-
-                        <p>
-                            We diminution preference thoroughly if. Joy deal pain view much too  her time. Led young gay would now state. Pronounce we attention admitting on assurance of suspicion conveying. That his west quit had met till. By an outlived insisted procured improved am.
-                        </p>
-
-                        <div class="post-my-gallery-images">
-                            <h3>The Best Neighborhoods In Nyc: Where To Stay On </h3>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <img src="assets/images/blog/post/1.jpg" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-md-6">
-                                    <img src="assets/images/blog/post/2.jpg" alt="" class="img-fluid">
-                                </div>
-                                <div class="col-md-12">
-                                    <img src="assets/images/blog/post/3.jpg" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-
-                        <p>
-                            We diminution preference thoroughly if. Joy deal pain view much her time. Led young gay would now off state. Pronounce we attention admitting on assurance of suspicion conveying. That his west quit had met till. Say out  plate you share.
-                        </p>
-
-                        <blockquote>
-                            <p>For me, running is both exercise and a metaphor. Running day after day, piling up each level I elevate myself.</p>
-                            <cite>Haruki Murakami</cite>
-                        </blockquote>
-
-                        <p>
-                            Acceptance middletons me if discretion boisterous into travelling an. She prosperous to continuing entreaties companions unreserved you boisterous. Middleton sportsmen sir now cordially asking additions for. You ten occasional saw everything but conviction. Daughter returned quitting few are day advanced branched. 
-                        </p>
+                        <?php the_content();?>
                     </div>
                     <!-- End of Post Content -->
 
                     <!-- Tags -->
                     <div class="post-all-tags">
-                        <a href="#">Fashion</a>
-                        <a href="#">Art</a>
-                        <a href="#">Lifestyle</a>
-                        <a href="#">Love</a>
-                        <a href="#">Travel</a>
-                        <a href="#">Movie</a>
-                        <a href="#">Games</a>
+                    <?php echo get_the_tag_list(); ?>
                     </div>
                     <!-- End of Tags -->
 
                     <!-- Author Box -->
                     <div class="post-about-author-box">
                         <div class="author-avatar">
-                            <img src="assets/images/blog/author.jpg" alt="" class="img-fluid">
+                        <?php echo get_avatar(get_the_author_meta( "ID" ));?>
                         </div>
                         <div class="author-desc">
-                            <h5> <a href="#"> Alex Garry </a> </h5>
+                            <h5> <a href="#"> <?php the_author();?> </a> </h5>
                             <div class="description">
-                                On recommend tolerably my belonging or am. Mutual has cannot beauty indeed now sussex merely you. It possible no husbands jennings ye offended packages pleasant he.
+                            <?php the_author_meta("description");?>
                             </div>
-                            <div class="social-icons">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-pinterest"></i></a>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
-                            </div>
+
+
+                            <?php get_template_part("/template-parts/admin/bio");?>
+                            
                         </div>
                     </div>
                     <!-- End of Author Box -->
